@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorGrey">
+
+                <TextView
+                    android:id="@+id/textFechaHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/lbl_control_identidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:text="Control Identidad" />
+
+                <TextView
+                    android:id="@+id/lbl_rut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:text="Rut" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp">
+                    <EditText
+                        android:id="@+id/textRutUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingStart="10dp"
+                        android:inputType="phone"
+                        android:digits="1234567890"
+                        android:layout_gravity="center_vertical"
+                        android:backgroundTint="@color/colorGreyOscuro"
+                        android:textColor="@color/colorGreyOscuro"
+                        />
+                    <ImageView
+                        android:id="@+id/imageQRUser"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/qr" />
+                   <!-- <ImageView
+                        android:id="@+id/imageNFCUser"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/nfc" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/lbl_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:textSize="15dp"
+                    android:text="Nombre" />
+
+                <EditText
+                    android:id="@+id/et_nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPersonName"
+                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz"
+                    android:ems="10"
+                    android:backgroundTint="@color/colorGreyOscuro"
+                    android:textColor="@color/colorGreyOscuro"
+                    />
+
+                <TextView
+                    android:id="@+id/lbl_fecha_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:textSize="15dp"
+                    android:text="Fecha de Nacimiento" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_fecha_nacimiento"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:backgroundTint="@color/colorGreyOscuro"
+                        android:textColor="@color/colorGreyOscuro"
+                        android:inputType="date"
+                        android:clickable="true"
+                        android:onClick="rescatarRut"
+                        android:focusable="false"
+                        android:maxLines="1" />/>
+
+                    <ImageView
+                        android:id="@+id/imageCalendarioUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/calendario"  />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lbl_procedimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorGreyOscuro"
+                        android:textSize="15dp"
+                        android:text="Procedimiento" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerproc"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorGreyOscuro"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/lbl_obcervacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:text="Observación" />
+
+                <EditText
+                    android:id="@+id/et_observacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:textColor="@color/colorGreyOscuro"
+                    android:backgroundTint="@color/colorGreyOscuro"
+                    android:inputType="textPersonName"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/btn_ingresar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Ingresar" />
+
+                        <Button
+                            android:id="@+id/btn_cancelar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Limpiar" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escanear Placa Patente"
+        android:textColor="@color/colorGreyOscuro"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_image" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_camara"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/camara" />
+
+        <Button
+            android:id="@+id/btn_camara2"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arcamera" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Placa leida"
+            android:textColor="@color/colorGreyOscuro"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/ingreso_patente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorGreyOscuro"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="Cancelar" />
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Aceptar" />
+    </LinearLayout>
+
+</LinearLayout>

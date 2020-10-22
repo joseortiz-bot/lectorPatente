@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_marcas">
+        <item>Chevrolet</item>
+        <item>Kia</item>
+        <item>Suzuki</item>
+        <item>Nissan</item>
+        <item>Hyundai</item>
+        <item>Toyota</item>
+        <item>Mitsubishi</item>
+        <item>Peugeot</item>
+        <item>Ford</item>
+        <item>Mazda</item>
+    </string-array>
+</resources>

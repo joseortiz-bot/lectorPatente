@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textFechaHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGreyOscuro"
+                        android:textStyle="bold"
+                        android:text="TextView" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Control Vehículo"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:text="Rut"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/textRut"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:paddingStart="10dp"
+                                android:inputType="phone"
+                                android:digits="1234567890"
+                                android:layout_gravity="center_vertical"
+                                android:backgroundTint="@color/colorGreyOscuro"
+                                android:textColor="@color/colorGreyOscuro"
+                                />
+                            <ImageView
+                                android:id="@+id/imageQR"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/qr" />
+                            <ImageView
+                                android:id="@+id/imageNFC"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nfc" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/textNombre"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz"
+                                android:layout_weight="2"
+                                android:paddingStart="10dp"
+                                android:maxLength="50"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/colorGreyOscuro"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:singleLine="true"
+                                android:imeOptions="actionDone"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fecha Nacimiento"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/textFechaNacimiento"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:paddingStart="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:backgroundTint="@color/colorGreyOscuro"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:inputType="date"
+                                android:clickable="true"
+                                android:onClick="rescatarRut"
+                                android:focusable="false"
+                                android:maxLines="1" />
+                            <ImageView
+                                android:id="@+id/imageCalendario"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/calendario" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Patente"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textPatente"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:backgroundTint="@color/colorGreyOscuro"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:paddingStart="10dp"
+                                android:layout_gravity="center_vertical" />
+                            <ImageView
+                                android:id="@+id/imagePatente"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/conduccion" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marca"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spinnerMarca"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorGreyOscuro"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Infracción - Motivo"
+                                android:textColor="@color/colorGreyOscuro"
+                                android:textStyle="bold"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spinnerMotivo"
+                                android:layout_width="300dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorGreyOscuro"
+                                />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/btn_limpiar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textColor="#FFF"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Limpiar" />
+                            <Button
+                                android:id="@+id/btn_ingresar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textColor="#FFF"
+                                android:layout_centerHorizontal="true"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Ingresar" />
+                            <Button
+                                android:id="@+id/btn_imprimir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textColor="#FFF"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:text="Imprimir" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

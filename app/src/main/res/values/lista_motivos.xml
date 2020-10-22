@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_motivos">
+        <item>Sin Antecedentes</item>
+        <item>Conducir bajo la influencia del alcohol.</item>
+        <item>Conducir vehículo bajo influencia drogas o estupefacientes.</item>
+        <item>No respetar señal Pare. </item>
+        <item>No respetar la luz roja del semáforo.</item>
+        <item>Conducir vehículo a mayor velocidad de la máxima legal permitida. </item>
+        <item>Conducir sin haber obtenido licencia de conducir.</item>
+    </string-array>
+</resources>

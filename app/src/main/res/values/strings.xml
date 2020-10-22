@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Poc Carabineros</string>
+    <string name="password">Password</string>
+    <string name="usuario">Rut</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrar">Registrar</string>
+    <string name="txt_nombre">Nombre Completo</string>
+    <string name="app_consultar">Cédula de identidad</string>
+    <string name="app_spinner">Placa patente</string>
+    <string name="edit_ca">Vaucher</string>
+    <string name="edit_fecha">Fecha</string>
+    <string name="edit_hora">Hora</string>
+    <string name="edit_motivo">Motivo</string>
+    <string name="edit_numero">Ingrese el código para Historial </string>
+    <string name="BotonRegistrar">Registrar</string>
+    <string name="BotonBuscar">Buscar</string>
+    <string name="BotonEliminar">Eliminar</string>
+    <string name="BotonModificar">Modificar</string>
+    <string name="sigiente">siguiente</string>
+</resources>

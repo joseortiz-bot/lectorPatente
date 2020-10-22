@@ -1,0 +1,4 @@
+include ':materialviewpager'
+include ':materialviewpager'
+rootProject.name='PocIdemiaCarabineros'
+include ':app'

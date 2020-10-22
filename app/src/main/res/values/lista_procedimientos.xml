@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_procedimiento">
+        <item>Sin Antecedentes</item>
+        <item>Detención por antecedentes</item>
+        <item>Infracción por inclumplimiento legal </item>
+    </string-array>
+</resources>

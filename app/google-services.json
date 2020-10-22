@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "503027184624",
+    "firebase_url": "https://idemia-d24ff.firebaseio.com",
+    "project_id": "idemia-d24ff",
+    "storage_bucket": "idemia-d24ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503027184624:android:84d9dd382bc9d29232e335",
+        "android_client_info": {
+          "package_name": "com.idemia.pocidemiacarabineros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503027184624-vbibpkqnn8b1o3ovrsi37mcvmj8fnulk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idemia.pocidemiacarabineros",
+            "certificate_hash": "94a6dfff9a753c2c1aa066f202c4c61b10d2c323"
+          }
+        },
+        {
+          "client_id": "503027184624-tjahboq35j87hvcvk96n0epevqbdvh55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcqrHZWCrf9yerWa5d5Z82ak80cxYmfas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503027184624-tjahboq35j87hvcvk96n0epevqbdvh55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

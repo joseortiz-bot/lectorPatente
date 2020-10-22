@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_patente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorGreyOscuro"
+        android:text="Patente"/>
+    <TextView
+        android:id="@+id/tx_direccion"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:textColor="@color/colorGreyOscuro"
+        />
+    <TextView
+        android:id="@+id/tx_fecha"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreyOscuro"
+        android:text="Fecha"/>
+    <TextView
+        android:id="@+id/tx_hora"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreyOscuro"
+        android:text="Hora"/>
+</LinearLayout>

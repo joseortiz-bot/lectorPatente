@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escanear Código QR"
+        android:textColor="@color/colorGreyOscuro"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageNfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qr" />
+
+    <TextView
+        android:id="@+id/lbl_acerque_chip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorGreyOscuro"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Apunte el lector al codigo QR la cédula de identidad..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rut:"
+            android:textColor="@color/colorGreyOscuro"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/txtBarcodeValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="@color/colorGreyOscuro"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="Cancelar" />
+        <Button
+            android:id="@+id/btn_aceptar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Aceptar" />
+
+    </LinearLayout>
+
+</LinearLayout>

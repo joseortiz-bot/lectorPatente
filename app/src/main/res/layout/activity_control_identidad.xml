@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.florent37.materialviewpager.MaterialViewPager
+        android:id="@+id/materialViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewpager_pagerTitleStrip="@layout/material_view_pager_pagertitlestrip_newstand"
+        app:viewpager_logoMarginTop="80dp"
+        app:viewpager_color="@color/colorPrimary"
+        app:viewpager_headerHeight="46dp"
+        app:viewpager_headerAlpha="1.0"
+        app:viewpager_imageHeaderDarkLayerAlpha="0.2"
+        app:viewpager_hideLogoWithFade="false"
+        app:viewpager_hideToolbarAndTitle="false"
+        app:viewpager_enableToolbarElevation="true"
+        app:viewpager_parallaxHeaderFactor="1.5"
+        app:viewpager_headerAdditionalHeight="20dp"
+        app:viewpager_displayToolbarWhenSwipe="true"
+        app:viewpager_transparentToolbar="true"
+        app:viewpager_animatedHeaderImage="true"
+
+        />
+
+    <!--<include layout="@layout/drawer" />-->
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_identity"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/tarjetadeidentificacion"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textSize="10dp"
+                    android:text="Identidad"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btn_car"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/coche"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textSize="10dp"
+                    android:text="Vehículo"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+                <TextView
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/tarjetadeidentificacion"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textColor="#FFFFFF"
+                    android:visibility="invisible">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btn_his"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/historia"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textSize="10dp"
+                    android:text="Historial"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btn_exit"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/salida"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textSize="10dp"
+                    android:text="salir"
+                    android:textColor="#FFFFFF">
+
+                </TextView>
+
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/usuario"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_anchor="@id/bottomAppBar"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbl_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="00/00/00  00:00" />
+
+                <TextView
+                    android:id="@+id/lbl_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="20dp"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:text="Diego Garay" />
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/lbl_menu_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Menú Principal" />
+
+        <Button
+            android:id="@+id/btn_control_identidad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:drawableEnd="@drawable/identificacion"
+            android:text="Control Identidad" />
+
+        <Button
+            android:id="@+id/btn_control_vehiculos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_auto"
+            android:layout_margin="10dp"
+            android:text="Control Vehiculos" />
+
+        <Button
+            android:id="@+id/btn_listado_vehiculos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_listado"
+            android:layout_margin="10dp"
+            android:text="Listado Vehiculos" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cerrar_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Cerrar Sesión" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
